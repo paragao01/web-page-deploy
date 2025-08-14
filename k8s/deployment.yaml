@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: webpage
 spec:
-  replicas: 1
+  replicas: 4
   selector:
     matchLabels:
       app: webpage
@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: webpage
-        image: oagara/pagina-exemplo:blue
+        image: oagara/pagina-exemplo:green
         ports:
         - containerPort: 80
 ---
